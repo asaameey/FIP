@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css">
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 550px
+                                
+    }
+    div{
+        border: 10px 10px;
+        border-radius: 5px;
+       
+    }
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f15e;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+
+      .row.content {height: auto;
+        background-color: gray;
+      
+        } 
+        .collapse navbar-collapse{
+          background-color: black;
+
+        }
+    }
+    body{
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+    button{
+        padding: 2px 10px;
+        border-style: hidden;
+    }
+    .well{
+        background-color: rgba(255, 255, 255, 0.904);
+        border-style: hidden;
+        border-radius: 10px;
+        margin:5px;
+        border-spacing: 5px;
+        margin-inline-start: auto;
+    }
+    .col-sm-4{
+        background-color: rgba(0, 0, 0, 0);
+        margin-inline-start: auto;
+        margin:auto;
+        border-style:hidden;
+        border-radius: 3px;
+    }
+    h4{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">MyMunchies</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="form.html">Place Your Order</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+      <h2>Welcome To MyMunchies</h2>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li><button type="button" onclick="document.location='signin.html'">Order</button></li>
+        <li><button type="button" onclick="document.location='About.html'">About Us</button></li>
+        <li><button type="button" onclick="document.location=''">Contact Us</button></li>
+        <li><button type="button" onclick="document.location='login.html'"">Login</button></li>
+      </ul><br>
+    </div> 
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="well">
+      <h1><b><strong> WELCOME TO MYMUNCHIES</strong><br> DELIGHTED TO HAVE YOU HERE<br>
+        ENJOY YOUR JOURNEY WITH OUR SERVICES    
+    </b></h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+          <img src="https://www.rewardsnetwork.com/wp-content/uploads/2017/12/FIRSTSnacksAsDaypart_1.jpg" width="305px" height="250px">
+          <p>
+            <h4>
+              Chipps
+            </h4>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+           <img src="https://cdn.cdnparenting.com/articles/2018/12/04150206/749833138-H.jpg" height="250px" width="300px">
+           <p>
+            <h4>
+              Cheese and Corn Rolls
+            </h4>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ocMhI5-vUqiXoorsxgH2ukr5jy2wB8wm1Um2wHypUA7fe9rDUlecrb9-4pz6iC-e2UY&usqp=CAU" height="250px" width="300px">
+          <p>
+            <h4>
+              Burger
+            </h4>
+            <p>
+          </div>    
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="well">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6b9CQUjyQd31SEwMnn9njUKQFc9b1i--1Z_1YkEJ7aqdBaisw7tzVNWAGPnah5jUzbvk&usqp=CAU" height="250px" width="312px"> <p>
+              <h4>
+                Mozzarella Sticks Marinara Dip
+              </h4>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+          <img src="https://i.pinimg.com/1200x/72/e6/e0/72e6e00ee8a6260c4ff51180c13d8ea0.jpg" width="300px" height="250px">
+          <h4>
+           Popcorn
+          </h4>
+        </p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well">
+            <img src="https://dallas.culturemap.com/media-library/laderach-chocolate-interior.jpg?id=31489635&width=2000&height=1500&quality=85&coordinates=0%2C2%2C0%2C2" width="300px" height="250px">
+            <h4>
+              Chocolate
+             </h4>
+           </p>
+          </div>
+        </div>
+      </div>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
