@@ -7,50 +7,58 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <style type="text/css">
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 550px
-                                
+    .row.content {
+      height: 550px
+      
     }
     div{
         border: 10px 10px;
         border-radius: 5px;
+        background-color: black;
        
     }
     
     /* Set gray background color and 100% height */
     .sidenav {
-      background-color: #f1f1f15e;
+      background-color: #000000;
       height: 100%;
+      color: orange;
+      
     }
         
-    /* On small screens, set height to 'auto' for the grid */
-    @media screen and (max-width: 767px) {
+    
 
       .row.content {height: auto;
-        background-color: gray;
+        background-color: rgb(0, 0, 0);
+        margin: 4px;
+        padding: 4px 8px;
+        
       
         } 
         .collapse navbar-collapse{
-          background-color: black;
+          color: orange;
+          background-color: rgb(0, 0, 0);
+          padding: 5px 10px;
+          margin: auto;
 
         }
-    }
+    
     body{
-        background-color: rgba(255, 255, 255, 0.712);
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 166, 0);
     }
-    button{
-        padding: 2px 10px;
-        border-style: hidden;
-    }
+    
     .well{
-        background-color: rgba(255, 255, 255, 0.904);
+        background-color: rgb(14, 0, 0);
         border-style: hidden;
         border-radius: 10px;
+        border-style: hidden;
         margin:5px;
         border-spacing: 5px;
         margin-inline-start: auto;
     }
     .col-sm-4{
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgb(0, 0, 0);
         margin-inline-start: auto;
         margin:auto;
         border-style:hidden;
@@ -59,6 +67,55 @@
     h4{
       text-align: center;
     }
+    h2{
+      text-align: center;
+    }
+    h1{text-align: center;}
+    h3{
+      text-align: center;
+    }
+    button{
+      background-color: rgb(0, 0, 0);
+      margin: auto;
+      padding: 25px 40px;
+      border-radius: 10px 10px;
+      border: 5px 10px;
+      border-style: hidden;
+      color: orange;
+
+    }
+    footer{
+      background-color: black;
+      color: white;
+    }
+    .foot{
+      text-align: center;
+      
+    }
+    h5{
+      text-align: center;
+      
+    }
+    .img{
+      align-content: center;
+    }
+    .welcome{
+      text-align: left;
+    }
+    .myNavbar{
+      padding: 10px 20px;
+      color: orange;
+      background-color: orange;
+    }
+    .foo{
+      background-color: white;
+      padding: 0.1px 100px;
+    }
+    .navbar-brand{
+      color: orange;
+      background-color: orange  ;
+    }
+   
   </style>
 </head>
 <body>
@@ -75,10 +132,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Dashboard</a></li>
+        <li class="link"><a href="#">Dashboard</a></li>
         <li><a href="form.html">Place Your Order</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         <li><a href="login.html">Login</a></li>
       </ul>
     </div>
@@ -88,22 +145,25 @@
 <div class="container-fluid">
   <div class="row content">
     <div class="col-sm-3 sidenav hidden-xs">
-      <h2>Welcome To MyMunchies</h2>
+      <h2 class="welcome">Welcome To MyMunchies</h2>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
-        <li><button type="button" onclick="document.location='signin.html'">Order</button></li>
-        <li><button type="button" onclick="document.location='About.html'">About Us</button></li>
-        <li><button type="button" onclick="document.location=''">Contact Us</button></li>
-        <li><button type="button" onclick="document.location='login.html'"">Login</button></li>
+        <li class="acti"><a href="nav.html">Dashboard</a></li>
+          <li><a href="form.html">Place Your Order</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul><br>
     </div> 
     <br>
     
     <div class="col-sm-9">
       <div class="well">
-      <h1><b><strong> WELCOME TO MYMUNCHIES</strong><br> DELIGHTED TO HAVE YOU HERE<br>
-        ENJOY YOUR JOURNEY WITH OUR SERVICES    
-    </b></h1>
+      <h1><b><strong> WELCOME TO MYMUNCHIES</strong></h1><p>
+        <h2> DELIGHTED TO HAVE YOU HERE</h2><p><h3> ENJOY YOUR JOURNEY WITH OUR SERVICES</h3> </p>
+      </p>
+        
+           
+    </b>
       </div>
       <div class="row">
         <div class="col-sm-4">
@@ -168,6 +228,23 @@
     </div>
   </div>
 </div>
+<p class="foo"></p>
+<footer>
+  <p class="foot"><strong><h1>MyMunchies.com</h1></strong> 
+  </p>
+  <h4 class="navfoot">
+    <button type="button" onclick="document.location='Home.html'">Home</button>
+    <button type="button" onclick="document.location='About.html'">About Us</button>
+    <button type="button" onclick="document.location='Home.html'">Contact Us</button>
+    <button type="button" onclick="document.location='Home.html'">Privacy</button>
+    <button type="button" onclick="document.location='Home.html'">Terms</button>
+  </h4>
+    <h5>
+     &copy;2023 All right Reserved
+    </h5>
+  </p>
 
+</footer>
 </body>
 </html>
+
