@@ -1,0 +1,311 @@
+body{
+    background-color: #303030;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item{
+    background-color: white;
+    border: 1px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #303030;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.menu-item img{
+    max-width: 100%;
+}
+
+.menu-item a{
+    color: white;
+    background-color: orange;
+    border: 3px;
+    padding: 5px 50px;
+    border-radius: 5px;
+    justify-content: center;
+    transition: padding 0.4s ease-in-out;
+}
+
+.menu-item a:hover{
+    background-color: #303030;
+    padding:5px 104px; 
+    row-gap: 5px;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: auto;
+}
+
+
+.space{
+    padding: 20px;
+    background-color: #303030;
+    color: #303030;
+    margin: auto;
+}
+
+
+
+nav ul{
+    
+    list-style-type:none ;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+
+}
+.nav ul, h2{
+  gap: 100px;
+
+}
+.nav ul  div {
+    justify-content: end;
+}
+
+nav a img{
+  width: 49px;
+  height: 40px;
+}
+
+nav a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+nav a:hover{
+    color: orange;
+    border-radius: 10px;
+}
+
+.navdiv{
+    padding: 1px;
+    background-color: orange;
+}
+
+
+.footer-headline{
+    color: white;
+}
+
+.footer-logo{
+    color: white;
+}
+
+.hide{
+    color: white;
+}
+
+.footer-bottom{
+    color: white;
+}
+
+section, h3{
+    color: white;
+}
+
+.rowpic{
+    justify-content: start;
+}
+
+
+
+
+
+
+.menu-rap{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 2;
+    gap: 24px;
+    background-color: #303030;
+    height: 60px;
+    padding: 0px 16px;
+    align-items: center;
+}
+
+.menu-bar{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.logo{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 8px;
+    background-color: #303030;
+}
+
+.nav > li{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    height: 42px;
+}
+
+.nav > li > a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav > li > button{
+    color: white;
+    background-color: orange;
+    border-bottom: 2px solid transparent;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-weight: 500;
+    gap: 4px;
+    opacity: 1;
+    align-items: center;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    display: flex;
+    padding: 3px 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav > li > button:hover, .nav > li > button:hover{
+    opacity: 0.7;
+}
+
+.dropdown{
+    position: absolute;
+    top: 42px;
+    min-width: 240px;
+    border-radius: 8px;
+    background-color: #303030;
+    display: none;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: none;
+    z-index: 2;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.99)
+        translateY(-0,7em) ;
+        transform-origin: top;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1)
+        translateY(0);
+    }
+}
+
+.dropdown h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8x;
+}
+
+.list-menu{
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.list-menu > li > a{
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    width: 100%;
+    color: #303030;
+
+}
+
+.list-menu > li > a:hover{
+    color: orange;
+}
+
+.list-items{
+    list-style-type: none;
+}
+
+.list-items li{
+    display: flex;
+    padding: 4px;
+    gap: 16px;
+    width: 100%;
+}
+
+.list-items li:hover{
+    color: orange;
+}
+
+.item-tittle h3{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-tittle p{
+    font-size: 12px;
+}
+
+.nav > li:hover .dropdown{
+    display: flex;
+    opacity: 1;
+}
+
+.act-btns{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.act-btns a{
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 4px 8px;
+    transition: all9.4s ease-in-out;
+}
+
+.act-btns a:hover{
+    opacity: 75;
+}
+
+.burger-menu{
+    display: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
