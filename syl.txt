@@ -1,0 +1,405 @@
+.myfoot{
+    
+    max-height: max-content;
+    max-width: max-content;
+
+    
+  }
+
+
+  .quik{
+    margin: 50px 300px;
+  }
+  .about{
+    margin: -100px 460px;
+  }
+  .prt{
+    margin: 50px 600px;
+  }
+  .lgl{
+    margin: -72px 710px;
+  }
+
+  .con{
+    margin: 50px 815px;
+  }
+
+  .foo{
+    padding: 1px 100px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.726);
+  }
+
+  .er{
+    
+    
+    height: 100px ;
+    border-left: 1px solid white;
+    margin:auto;
+  }
+
+  div a{
+    
+    color: orange;
+  }
+
+
+
+
+
+
+
+    FOOTER
+
+
+
+   <footer>
+       <div class="foot"></div>
+       <div class="footrap">
+        <section class="foottop">
+            <div class="foothdl">
+                <h2>sign Up</h2>
+                <p>
+                    Stay Up
+                </p>
+            </div>
+            <div class="footsub">
+                <input type="email"
+                placeholder="Your Email">
+
+                <button>
+                    Sign Up
+                </button>
+            </div>
+        </section>
+        <div class="footcolm">
+            <section class="footlogo">
+                <svg xmlns="#" class="logo" fill="none" viewBox="#">
+
+                </svg>
+                <h2 class="hide">Astra</h2>
+            </section>
+            <section>
+            <h3>product</h3>
+            <ul>
+                <li>
+                    <a href="#" title="API">API</a>
+                </li>
+                <li>
+                    <a href="#" title="Pricing">Pricing</a>
+                </li>
+            </ul>
+            </section>
+        </div>
+        <div class="footbtm">
+            <small>
+                My company Ltd. <span id="year"></span>, All rights reserved
+            </small>
+            <span class="socila">
+                <a href="#" title="Instagram"><img src="#" alt="Instagram"></a>
+                <a href="#" title="Linkdin"><img src="#"></a>
+            </span>
+        </div>
+       </div>
+    </footer>
+
+        <script>
+            document.getElementById("year").innerHTML=new Date().getFullYear();
+        </script>
+</body>
+</html>
+
+
+
+
+@import url();
+
+:root{
+  --footer-backgound:black;
+  --text-color:white;
+
+}
+
+
+
+
+
+
+  html{
+  font-size: 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+*, *::after, *::before{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+
+}
+
+footer{
+  position:absolute;
+  bottom: 0px;
+  background-color: var(--footer-backgound);
+  min-width:300px;
+  width: 100vw;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footrap{
+  display: flex;
+  background: var(--footer-backgound);
+  flex-direction: column;
+  max-width: 1320px;
+  padding: 16px;
+}
+
+.foottop{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  padding: 16px 0px;
+  justify-content: space-between;
+}
+
+.footln{
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(90deg, #5d8ff5, #605dff 50%, ad63f6);
+}
+
+.footsub{
+  display: block;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footsub> input{
+  border: 1px solid var(--text-gray);
+  color: var(--text-color);
+  min-height: 36px;
+  font-size: 1.2rem;
+  flex: 1 0 80px;
+  white-space:nowrap;
+  padding: 8px 12px;
+  border: 0px;
+  outline: none;
+}
+
+.footcolm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  flex: 2 0 140px;
+  width: 100%;
+  gap: 16px;
+  padding: 24px 8px 16px 8px;
+  margin: 0 auto;
+  border-top: 1px solid var(--text-gray);
+}
+
+.footcolm ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footcolm ul a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.footcolm ul a:hover{
+  text-decoration: underline;
+}
+
+.footcolm ul li{
+  margin-bottom: 16px;
+}
+
+.footcolm h3{
+  color: var(--footer-heading-gray);
+  margin-top: 0px;
+  margin-bottom: 25px;
+  font-size: 1.125rem;
+}
+
+.footcolm>section{
+  min-width: 150px;
+}
+
+.footlogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  min-width: 180px;
+  gap: 8px;
+}
+
+.footlogo> svg{
+  stroke: var(--text-color);
+  stroke-width: 8px;
+  width: 50px;
+}
+
+.footbtm{
+  text-align: center;
+  border-top:1px solid var(--text-gray) ;
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  width: 1000%;
+  gap: 8px;
+  padding: 16px 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footbtm >small{
+  font-size: 16px;
+  margin: 0 4px;
+}
+
+.foothdl >h2{
+  margin: 0px;
+}
+
+.foothdl >p{
+  margin: 12px 0px;
+}
+
+.socila{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  
+}
+
+.socila img{
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.socila img:hover{
+  transition: scale(1.1);
+}
+
+@media (max-width: 800px){
+  .foottop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 8px 32px 8px;
+  }
+
+  .footbtm{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: space-between;
+    text-align: center;
+    margin: 0px auto;
+
+  }
+}
+
+
+
+
+
+(
+  
+   .row.content {
+    justify-content: center;
+    height: auto;
+     background-color: #303030;
+     margin: 4px;
+     padding: 4px 8px;
+     
+   
+     } 
+     .collapse navbar-collapse{
+        justify-content: center;
+       background-color: #303030;
+       padding: 5px 10px;
+       margin: auto;
+
+     }
+ 
+ body{
+     background-color: #303030;
+     color: rgb(255, 166, 0);
+ }
+ 
+ .well{
+    justify-content: center;
+     background-color: #303030;
+     border-style: hidden;
+     border-radius: 10px;
+     border-style: hidden;
+     margin:5px;
+     border-spacing: 5px;
+     margin-inline-start: auto;
+ }
+ .col-sm-4{
+    justify-content: center;
+     background-color:#303030;
+     margin-inline-start: auto;
+     margin:auto;
+     border-style:hidden;
+     border-radius: 3px;
+ }
+ h4{
+   text-align: center;
+ }
+ h2{
+   text-align: center;
+ }
+ h1{text-align: center;}
+ h3{
+   text-align: center;
+ }
+ button{
+   background-color: rgba(240, 248, 255, 0);
+   margin: auto;
+   padding: 25px 40px;
+   border-radius: 10px 10px;
+   border: 5px 10px;
+   border-style: hidden;
+   color: orange;
+
+ }
+ footer{
+   background-color: black;
+   color: white;
+ }
+ .foot{
+   text-align: center;
+   
+ }
+ h5{
+   text-align: center;
+   
+ }
+ .img{
+   align-content: center;
+ }
+ .welcome{
+   text-align: left;
+   
+ }
+
+)

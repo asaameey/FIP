@@ -1,0 +1,42 @@
+body, ul{
+    margin: 1vw;
+    padding: 0;
+    height: 2vw;
+    width: auto;
+   
+
+}
+
+.logo{
+    float: inline-start;
+}
+
+.navbar ul li{
+    display: inline;
+    margin: 0px 20px;
+    margin: 10px;
+}
+
+.navbar{
+    position: sticky;
+    background-color: #303030;
+    text-align: center;
+    
+   
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.navbar li a:hover{
+    color: orange;
+}
+
+.action-btn{
+    float: right;
+}

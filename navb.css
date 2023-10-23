@@ -24,16 +24,21 @@ nav ul{
 
 }
 
-.nav ul, i{
-    
+nav a img{
+  width: 100px;
+  height: 100px;
 }
 
-nav a{
-   
+.nav a{
+    display: flex;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
 
+}
+
+.nav a i{
+  justify-content: flex-end;
 }
 
 nav footer{
@@ -42,19 +47,18 @@ nav footer{
 }
 
 main{
-    
+    background-position: center;
     margin: auto;
     padding: 20px;
-    background-color: #303030;
+    background-color: white;
     box-shadow: 0 0 10px rgb(31, 31, 31);
     position: relative;
     max-width: 1000px;
 
 }
-img{
-    vertical-align: middle;
+
     
-}
+
 
 @keyframes show {
     from{opacity: 0.2;}
@@ -98,10 +102,74 @@ img{
     justify-items: right;
   }
 
-.menu{
-  margin-right: auto;
+.actbtns{
+  display: flex;
+  gap: 4px;
+  flex-wrap: nowrap;
 }
 
-  
+.top{
+  text-align: center;
+  size: 100px;
+}
 
+.logo{
+  justify-self:center;
+}
+
+.content{
+  padding: 50px 10px;
+  border: #303030;
+  border-style: groove;
   
+  width: 250px;
+  
+}
+  
+.moremenu{
+  background-color:#303030;
+  display:flex;
+  justify-content: space-between;
+  gap: 0px;
+  margin: 2vh;
+  
+}
+
+.why{
+  background-color: white;
+  color: orange;
+  padding: 3vh;
+  display:block;
+  border-radius: 1px;
+  border-style: hidden;
+  
+}
+
+
+.link a{
+  background-color: orange;
+  color:rgb(0, 0, 0);
+  padding: 1vw 5vw;
+  border-radius: 5vh;
+  margin: 100px 550px;
+  transition: padding 0.4s ease-in-out;
+}
+
+.link a:hover{
+ 
+  padding: 1vw 6vw;
+  
+}
+
+.vendor{
+  background-color: white;
+  color: orange;
+  padding: 5vh;
+  display:inline-block;
+  border-radius: 1px;
+  border-style: hidden;
+}
+
+
+
+

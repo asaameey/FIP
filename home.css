@@ -1,0 +1,144 @@
+.row.content {
+    height: 550px
+    
+  }
+  div{
+      border: 10px 10px;
+      border-radius: 5px;
+      background-color: #303030;
+     
+  }
+  
+  /* Set gray background color and 100% height */
+  .sidenav {
+    background-color: #303030;
+    height: 100%;
+    color: orange;
+    
+  }
+      
+    .col-sm-9{
+        justify-content: center;
+    }
+
+    .row.content {height: auto;
+      background-color: #303030;
+      margin: 4px;
+      padding: 4px 8px;
+      
+    
+      } 
+      .collapse navbar-collapse{
+        color: orange;
+        background-color: #303030;
+        padding: 5px 10px;
+        margin: auto;
+
+      }
+  
+  body{
+      background-color: #303030;
+      color: rgb(255, 166, 0);
+  }
+  
+  
+  
+  h4{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  h1{text-align: center;}
+  h3{
+    text-align: center;
+  }
+  button{
+    background-color: #303030;
+    margin: auto;
+    padding: 25px 40px;
+    border-radius: 10px 10px;
+    border: 5px 10px;
+    border-style: hidden;
+    color: orange;
+
+  }
+
+
+.head{
+    color: white;
+    background-color: #303030;
+    justify-content: center;
+  }
+
+
+  .divide{
+    padding: 4px;
+    background-color: #303030;
+
+  }
+
+ 
+  h5{
+    text-align: center;
+    
+  }
+  .img{
+    align-content: center;
+  }
+  .welcome{
+    text-align: left;
+  }
+  .myNavbar{
+    padding: 10px 20px;
+    color: orange;
+    background-color: orange;
+  }
+  .foo{
+    background-color: white;
+    padding: 0.1px 100px;
+  }
+  .navbar-brand{
+    color: orange;
+    background-color: orange  ;
+  }
+
+  nav ul{
+  
+    list-style-type:none ;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 50px;
+
+}
+.nav ul, h2{
+  gap: 100px;
+
+}
+
+nav a img{
+  width: 50px;
+  height: 50px;
+}
+
+nav a{
+   
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+ .row.content {height: 550px
+                                
+ }
+
+ /* Set gray background color and 100% height */
+ .sidenav {
+   background-color: #fdfdfd00;
+   height: 100%;
+   color: orange;
+   
+ }
